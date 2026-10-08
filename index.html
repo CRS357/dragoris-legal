@@ -8,32 +8,52 @@
   <title>Dragoris — Terms of Service &amp; Privacy Policy</title>
   
 
-    <!-- 1. Der JSON-Payload für das Discord Component Embed -->
-    <script id="discord:component-embed" type="application/json">
-      {
-        "component": {
-          "type": 17,
+  <!-- Discord Component Embed Configuration -->
+<script id="discord:component-embed" type="application/json">
+  {
+    "component": {
+      "type": 17,
+      "components": [
+        {
+          "type": 1,
           "components": [
             {
-              "type": 1,
-              "components": [
-                {
-                  "type": 2,
-                  "style": 5,
-                  "label": "Jetzt ausprobieren!",
-                  "url": "https://deinedomain.de"
-                }
-              ]
+              "type": 12,
+              "title": "Dragoris — Terms & Privacy",
+              "description": "Terms of Service and Privacy Policy for the Dragoris Discord bot.",
+              "thumbnail": {
+                "url": "https://github.io"
+              }
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "components": [
+            {
+              "type": 2,
+              "style": 5,
+              "label": "Terms of Service",
+              "url": "https://github.io"
+            },
+            {
+              "type": 2,
+              "style": 5,
+              "label": "Privacy Policy",
+              "url": "https://github.io"
             }
           ]
         }
-      }
-    </script>
+      ]
+    }
+  }
+</script>
 
-    <!-- 2. Wichtig: Die Open Graph Fallbacks (falls Discord das JSON nicht laden kann) -->
-    <meta property="og:title" content="Titel meiner Website" />
-    <meta property="og:description" content="Eine kurze Beschreibung für die Vorschau." />
-    <meta property="og:image" content="https://deinedomain.de" />
+<!-- Open Graph Fallback (Crucial if Discord fails to parse the JSON) -->
+<meta property="og:title" content="Dragoris — Terms & Privacy" />
+<meta property="og:description" content="Terms of Service and Privacy Policy for the Dragoris Discord bot." />
+<meta property="og:image" content="https://github.io" />
+
   
   <style>
     :root {
